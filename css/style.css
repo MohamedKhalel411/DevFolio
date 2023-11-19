@@ -97,44 +97,235 @@ body:has(.contact:target) li a[href="#contact"]
 .home-content h1{
     font-size: 72px;
 }
-.animated-text{
-    border-right: solid 3px white;
-    width: 280px;
-    font-size: 40px;
-    position: relative;
-    display: flex;
-    margin-top: 40px;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red; */
-    overflow: hidden;
-    animation: width 2s infinite alternate;
+
+.home-content .animated span::before{
+    content: "|";
+    color: white;
+    font-size: 3.125rem;
+    animation: words 14s infinite;
 }
-@keyframes width{
-    0%{
-        width: 280px;
+@keyframes words{
+    0%,.5%{
+      content: "|";
+    }
+   1%,1.5%{
+      content: "D|";
+    }
+    2%,2.5%{
+      content: "De|";
+    }
+    3%,3.5%{
+      content: "Dev|";
+    }
+    4%,4.5%{
+      content: "Deve|";
+    }
+    5%,5.5%{
+      content: "Devel|";
+    }
+    6%,6.5%{
+      content: "Develo|";
+    }
+    7%,7.5%{
+      content: "Develop|";
+    }
+    8%,8.5%{
+      content: "Develope|";
+    }
+    9%,9.5%{
+      content: "Developer|";
     }
     
-    100%{
-        width: 0;
+    10%,10.5%{
+      content:"Develope|" ;
     }
-}
-.animated-text ul{
-    list-style: none;
-    height: 70px;
-    line-height: 90px;
-    overflow: hidden;
-}
-.animated-text li{
-    position: relative;
-    top: 0;
-    animation: slide 12s steps(4) infinite  alternate;
-}
-@keyframes slide {
-    100%{
-        top: -360px;
+    11%,11.5%{
+      content:"Develop|" ;
     }
-}
+    12%,12.5%{
+      content: "Develo|"
+    }
+    13%,13.5%{
+      content: "Devel|"
+    }
+    14%,14.5%{
+      content: "Deve|";
+    }
+    15%,15.5%{
+      content: "Dev|";
+    }
+    16%,16.5%{
+      content: "De|";
+    }
+    17%,17.5%{
+      content: "Des|";
+    }
+    18%,18.5%{
+      content: "Desi|";
+    }
+    19%,19.5%{
+      content: "Desig|";
+    }
+    20%,20.5%{
+      content: "Design|";
+    }
+    21%,21.5%{
+      content: "Designe|";
+    }
+    22%,22.5%{
+      content: "Designer|";
+    }
+    23%,23.5%{
+        content: "Designe|";
+    }
+    24%,24.5%{
+      content: "Design|";
+    }
+    25%,25.5%{
+      content: "Desig|";
+    }
+    26%,26.5%{
+      content: "Desi|";
+    }
+    27%,27.5%{
+      content: "Des|";
+   }
+   28%,28.5%{
+   content: "De|";
+   }
+   29%,29.5%{
+    content:"D|" ;
+   }
+  30%,30.5%{
+    content: "|";
+  }
+  31%,31.5%{
+    content: "P|";
+  }
+  32%,32.5%{
+    content: "Ph|";
+  }
+  33%,33.5%{
+    content: "Pho|";
+  }
+  34%,34.5%{
+    content: "Phot|";
+  }
+  35%,35.5%{
+    content: "Photo|";
+  }
+  36%,36.5%{
+    content: "Photog|";
+  }
+  37%,37.5%{
+    content: "Photogr|";
+  }
+  38%,38.5%{
+    content: "Photogra|";
+  }
+  39%,39.5%{
+    content: "Photograp|";
+  }
+  40%,40.5%{
+    content: "Photogrape|";
+  }
+  41%,41.5%{
+    content: "Photograper|";
+  }
+  42%,42.5%{
+    content: "Photogrape|";
+  }
+  43%,43.5%{
+    content: "Photograp|";
+  }
+  44%,44.5%{
+    content: "Photogra|";
+  }
+  45%,45.5%{
+    content: "Photogr|";
+  }
+  46%,46.5%{
+    content: "Photog|";
+  }
+  47%,47.5%{
+    content: "Photo|";
+  }
+  48%,48.5%{
+    content: "Phot|";
+  }
+  49%,49.5%{
+    content: "Pho|";
+  }
+  50%,50.5%{
+  content: "Ph|";
+  }
+  51%,51.5%{
+    content: "P|";
+  }
+  52%,52.5%{
+    content: "|";
+  }
+  53%,53.5%{
+    content: "F|";
+  }
+  54%,54.5%{
+  content: "Fr|";
+  }
+  55%,55.5%{
+    content: "Fre|";
+  }
+  56%,56.5%{
+  content: "Free|";
+  }
+  57%,57.5%{
+    content: "Freel|";
+  }
+  58%,58.5%{
+    content: "Freela|";
+  }
+  59%,59.5%{
+    content: "Freelan|";
+  }
+  60%,60.5%{
+    content: "Freelanc|";
+  }
+  61%,61.5%{
+    content: "Freelance|";
+  }
+  62%,62.5%{
+    content: "Freelancer|";
+  }
+  63%,63.5%{
+    content: "Freelance|";
+  }
+  64%,64.5%{
+    content: "Freelanc|";
+  }
+  65%,65.5%{
+    content: "Freelan|";
+  }
+  66%,66.5%{
+    content: "Freela|";
+  }
+  67%,67.5%{
+    content: "Freel|";
+  }
+  68%,68.5%{
+    content: "Free|";
+  }
+  69%,69.5%{
+    content: "Fre|";
+  }
+  70%,70.5%{
+    content: "Fr|";
+  }
+  71%,71.5%{
+    content: "F|";
+  }
+  72%,72.5%{
+    content: "|";
+  }
+  }
 /* ================================ABOUT============================= */
 .about{
 
@@ -286,6 +477,7 @@ body:has(.contact:target) li a[href="#contact"]
     border-radius: 50%;
     
 }
+
 .blog-card a{
     text-decoration: none;
     color:black;
@@ -295,13 +487,14 @@ body:has(.contact:target) li a[href="#contact"]
     color: #0078FF;
 }
 .card-label{
-    position: absolute;
-    background-color: #0078FF;
-    border-radius: 5px;
-    padding: 5px 15px;
-    top: 50%;
+    width: fit-content;
+    position: relative;
     left: 50%;
-    transform: translate(-50%);
+    bottom: 20px;
+    transform: translateX(-50%);
+    background-color: #0078FF;
+    border-radius: 4px;
+    padding: 5px 15px;
     color: white;
     text-transform: uppercase;
     font-size: 14px;
